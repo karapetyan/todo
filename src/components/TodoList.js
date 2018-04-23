@@ -30,7 +30,7 @@ const renderTodoList = (todoList, toggleTodo) => {
     return todoList.map(todo =>
         <div key={todo.id}>
             <label>
-                <input type="checkbox" onClick={() => toggleTodo(todo.id)} checked={todo.completed} /> 
+                <input type="checkbox" onClick={() => toggleTodo(todo.id)} defaultChecked={todo.completed} /> 
                 { todo.text }
             </label>
         </div>
